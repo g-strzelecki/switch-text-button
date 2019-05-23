@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
    }
+
+   body {
+       background-color: yellowgreen;
+   }
  
    button {
     position: absolute;
@@ -23,10 +27,20 @@
     line-height: 100px;
     position: relative;
     top: 0;
+    left: 0;
     transition: .2s linear;
+    padding: auto 20px;
    }
  
-   button:hover span {
-    top: -100px;
+   button:hover span:nth-child(1) {
+    left: -360px;
+}
+
+   button span:nth-child(2) {
+       top: -100px;
+       left: 360px;
    }
-   
+
+   button:hover span:nth-child(2) {
+       left: 0;
+   }
